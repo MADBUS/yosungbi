@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Yummy Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Yummy
+  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .select-btn{
+      font-weight: 500;
+      font-size: 14px;
+      display: inline-block;
+      border: none;
+      border-radius: 10px;
+      transition: 0.5s;
+      color: #fff;
+      background: var(--color-primary);
+    }
+    .modal{
+      display: none;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(148, 148, 148, 0.302);
+    }
+    .modal-content{
+      background-color: white;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid darkgrey;
+      width: 40%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      animation-name: modalopen;
+      animation-duration: 0.5s;
+    }
+    @keyframes modalopen {
+      from{
+        opacity: 0;
+      }to{
+        opacity: 1;
+      }
+    }
+    .close{
+      color: darkgray;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover, .close:focus{
+      color: black;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>요<span style="color: #ec2727;">心</span>비<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">홈</a></li>
+          <li><a href="#menu">메뉴</a></li>
+          <li><a href="#events"><span class="clicked">요심비</span></a></li>
+          <li><a href="#chefs">배너</a></li>
+          <li><a href="#gallery">맛집</a></li>
+          <li><a href="#contact">게시판</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a class="btn-book-a-table" href="login.html">로그인</a>
+      
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up" style="color: white;text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);"><br>요리를 <br>가<span style="color: #ec2727; font-size: larger;">心</span>비 있게</h2>
+          <p data-aos="fade-up" data-aos-delay="100"></p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <input href="#book-a-table" class="btn-book-a-table" placeholder="검색" style="background-color: rgba(255, 255, 255, 0.5); border: 5px solid #ec2727; color: black;">
+            <a href="https://www.youtube.com/watch?v=qWbHSOplcvY" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span style="text-shadow: 0 0 5px white ;">오늘의 추천레시피</span></a>
+          </div>
+          
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <h2 data-aos="zoom-out"; data-aos-delay="300" style="color: white; font-size: 40px ; text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);">오늘의 추천 요심비</h2>
+          <a href="assets/img/menu/된장찌개.png" class="glightbox"><img src="assets/img/menu/된장찌개.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300" style="background-color: white; border-radius: 30px; box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);"></a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter reciepe"></span>
+              <p>이용 가능한 레시피</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter visitor"></span>
+              <p>오늘의 방문자수</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter sold"></span>
+              <p>오늘의 판매량</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter new-write"></span>
+              <p>새 게시글</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <p>오늘의 <span>요심비</span></p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>한식</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>양식</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+              <h4>중식</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+              <h4>일식</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>한식</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/된장찌개.png" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6863103">요리: <span class="m_t">30</span>분 <span class="m_p">3070</span>원</a> <button class="select-btn1 select-btn">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트: <span class="m_t">4</span>분 <span class="m_p">4188</span>원</a> <button class="select-btn2 select-btn">선택</button>
+                    </p>
+                    <p class="price">
+                      <a>배달: <span class="m_t">40</span>분 <span class="m_p">12000</span>원</a> <button class="select-btn3 select-btn">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>된장찌개</h4>
+                <p class="한식1 ingredients">
+                  필요재료: 두부,된장,쌈장,고춧가루,물,파,버섯,감자
+                </p>
+                
+              </div><!-- Menu Item -->
+              
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/삼겹살.png" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">60</span>분 <span class="m_p">7915</span>원 </a> <button class="select-btn1 select-btn">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트:<span class="m_t"></span><span class="m_p"></span>-- </a><button class="select-btn2 select-btn">선택</button>
+                    </p>
+                    <p class="price">
+                      <a><span class ="time1">배달: <span class="m_t">40</span>분 <span class="m_p">18000</span>원</a> <button class="select-btn3 select-btn">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>삼겹살</h4>
+                <p class="한식2 ingredients">
+                  필요재료 : 삼겹살(500g),마늘,쌈장,밥
+                </p>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/제육.png" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">30</span>분 <span class="m_p">7325</span>원 </a><button class="select-btn1 select-btn">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.coupang.com/vp/products/5954140675?itemId=10652859599&vendorItemId=77933728458&q=%EB%B0%80%ED%82%A4%ED%8A%B8+%EC%A0%9C%EC%9C%A1%EB%B3%B6%EC%9D%8C&itemsCount=36&searchId=d43f6155fcef49a1b70c42adf159de8a&rank=0&isAddedCart=">밀키트:<span class="m_t">10</span>분 <span class="m_p">13200</span>원 </a><button class="select-btn2 select-btn">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">18000</span>원 </a><button class="select-btn3 select-btn">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>제육볶음</h4>
+                <p class="한식3 ingredients">
+                  필요재료: 돼지고기 앞다리살,양파,파,다진마늘,간장,고추장,고추가루
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action">
+                  <img src="assets/img/menu/찜닭.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                  <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times</span>
+                      <p class="price">
+                        <a href="https://www.10000recipe.com/recipe/68807980">요리: <span class="m_t">60</span>분 <span class="m_p">9850</span>원 </a><button class="select-btn1 select-btn">선택</button>
+                      </p>
+                      <p class="price">
+                        <a href="https://www.coupang.com/vp/products/2359442699?itemId=4095200168&vendorItemId=72079178026&pickType=COU_PICK&q=%EB%B0%80%ED%82%A4%ED%8A%B8+%EC%B0%9C%EB%8B%AD&itemsCount=36&searchId=0cd1809fdc6946b9a63715d6dc5e24ba&rank=0&isAddedCart=">밀키트:<span class="m_t">15</span>분 <span class="m_p">13900</span>원</a><button class="select-btn2 select-btn">선택</button>
+                      </p>
+                      <p class="price">
+                        <a href="">배달:<span class="m_t">40</span>분 <span class="m_p">28000</span>원</a> <button class="select-btn3 select-btn">선택</button>
+                      </p>
+                    </div>
+                  </div>
+                  <h4>찜닭</h4>
+                <p class="한식4 ingredients">
+                  필요재료: 손질된 닭, 간장, 양파, 감자,당근, 다진마늘
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/비빔밥.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6839413">요리: <span class="m_t">15</span>분 <span class="m_p">4150</span>원</a><button class="select-btn1 select-btn">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.coupang.com/vp/products/4798234946?itemId=6156611763&vendorItemId=73452831981&q=%EB%B9%84%EB%B9%94%EB%B0%A5+%EB%B0%80%ED%82%A4%ED%8A%B8&itemsCount=36&searchId=de01802326ee4679bf03e42ed5127fc1&rank=0&isAddedCart=">밀키트:<span class="m_t">5</span>분 <span class="m_p">9900</span>원</a> <button class="select-btn2 select-btn">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">11000</span>원</a> <button class="select-btn3 select-btn">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>비빔밥</h4>
+                <p class="한식5 ingredients">
+                  필요재료:밥,고추장,다진고기, 당근 ,계란, 시금치, 나물,참기름
+                  
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/갈비탕.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6858650">요리: <span class="m_t">120</span>분 <span class="m_p">21950</span>원</a><button class="select-btn1 select-btn">선택</button>
+                    </p>
+                    <p class="price"> 
+                      <a href="https://www.coupang.com/vp/products/8011685018?itemId=22352955997&vendorItemId=89410908970&q=%EA%B0%88%EB%B9%84%ED%83%95+%EB%B0%80%ED%82%A4%ED%8A%B8&itemsCount=36&searchId=4c7172ab24ad4642bfc6ae6e6c85ebcc&rank=0&isAddedCart=">밀키트:<span class="m_t">20</span>분 <span class="m_p">27000</span>원</a><button class="select-btn2 select-btn">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">26000</span>원</a><button class="select-btn3 select-btn">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>갈비탕</h4>
+                <p class="한식6 ingredients" >
+                  필요재료: 소등갈비, 다진마늘, 국간장, 당면, 파
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>양식</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/팬케이크.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6878513">요리: <span class="m_t">15</span>분 <span class="m_p">4540</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="#">밀키트:<span class="m_t"></span><span class="m_p"></span>-- </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">11000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>팬케이크</h4>
+                <p class="ingredients">
+                  필요재료: 팬케이크 믹스, 설탕, 달걀,메이플 시럽
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/햄버거.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6872553"><span class ="time1">요리: <span class="m_t">60</span>분 <span class="m_p">6350</span>원</a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.coupang.com/vp/products/4626080464?itemId=5739147218&vendorItemId=79090967702&q=%ED%96%84%EB%B2%84%EA%B1%B0+%EB%B0%80%ED%82%A4%ED%8A%B8&itemsCount=36&searchId=09782b2b9e00404f86b8f16729dee97f&rank=0&isAddedCart=">밀키트:<span class="m_t">3</span>분 <span class="m_p">6850</span>원 </span><button class="select-btn select-btn2">선택</button></a>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">12000</span>원 <button class="select-btn select-btn3"></a>선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>햄버거</h4> 
+                <p class="ingredients">
+                  필요재료: 햄버거빵,다진돼지고기,양상추 토마토,마요네즈 케첩,피클
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/샐러드.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6870877">요리: <span class="m_t">5</span>분 <span class="m_p">2480</span>원</a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.coupang.com/vp/products/6527547562?itemId=14485823729&vendorItemId=81729034264&q=%EC%83%90%EB%9F%AC%EB%93%9C&itemsCount=36&searchId=604b5b8ed75e443f91624ba3b9d0cc3b&rank=1&isAddedCart=">밀키트:<span class="m_t">0</span>분 <span class="mp">8990</span>원</a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">30</span>분 <span class="m_p">13000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>샐러드</h4>
+                <p class="ingredients">
+                  필요재료: 플레인 요거트,레몬즙,샐러드 채소,마요네즈
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/스테이크.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6864725">요리:  <span class="m_t">15</span>분 <span class="m_p">36930</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.coupang.com/vp/products/273882898?itemId=864058990&vendorItemId=5190040204&pickType=COU_PICK&q=%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%81%AC+%EB%B0%80%ED%82%A4%ED%8A%B8&itemsCount=36&searchId=e35098d5e7bb4080a3f024ed5e23306e&rank=0&isAddedCart=">밀키트:<span class="m_t">10</span>분 <span class="m_p">18700</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">22000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>스테이크</h4>
+                <p class="ingredients">
+                  필요재료: 소고기, 양파, 마늘, 소금
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/오믈렛.png" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6882172">요리: <span class="m_t">15</span>분 <span class="m_p">2970</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.coupang.com/vp/products/7619565967?itemId=20198271775&vendorItemId=87289110649&q=%EC%98%A4%EB%AF%88%EB%A0%9B+%EB%B0%80%ED%82%A4%ED%8A%B8&itemsCount=36&searchId=d0c369a07e124ac6a2b3886307226b0f&rank=2&isAddedCart=">밀키트:<span class="m_t">5</span>분 <span class="m_p">6330</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">30</span>분 <span class="m_p">13000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>오믈렛</h4>
+                <p class="ingredients">
+                  필요재료: 계란, 파슬리
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/파스타.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6866793">요리: <span class="m_t">30</span>분 <span class="m_p">2750</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.coupang.com/vp/products/310078060?itemId=977477690&vendorItemId=5392649379&q=%ED%8C%8C%EC%8A%A4%ED%83%80+%EB%B0%80%ED%82%A4%ED%8A%B8&itemsCount=36&searchId=a1315a9f3d3749a398f7689ccf92647e&rank=0&isAddedCart=">밀키트: <span class="m_t">15</span>분 <span class="m_p">11400</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">14000</span>원</a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>까르보나라 파스타</h4>
+                <p class="ingredients">
+                  필요재료: 베이컨,소금,흰우유,다진 마늘,버터,파스타면,체다치즈,양파
+                </p>
+                
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="menu-lunch">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>중식</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/볶음밥.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">10</span>분 <span class="m_p">2470</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트:<span class="m_t">5</span>분 <span class="m_p">8900</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">0</span>분 <span class="m_p">13000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>볶음밥</h4>
+                <p class="ingredients">
+                  필요재료: 밥,계란,새우,당근,마늘,간장
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/마파두부.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">30</span>분 <span class="m_p">8320</span>원 </span></a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트:<span class="m_t">10</span>분 <span class="m_p">13900</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">15000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>마파두부</h4>
+                <p class="ingredients">
+                  필요재료: 두부,돼지고기,다진파,다진양파,다진마늘,굴소스,된장,간장,설탕...
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/마라탕.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">10</span>분 <span class="m_p">11240</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트:<span class="m_t">15</span>분 <span class="m_p">16800</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">25000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>마라탕</h4>
+                <p class="ingredients">
+                  필요재료: 마라탕소스,마늘,청경채,콩나물,푸주,소고기,지마장소스...
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/동파육.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">180</span>분 <span class="m_p">15370</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNm=4">밀키트:<span class="m_t">10</span>분 <span class="m_p">18000</span>원 </span></a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">28000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>동파육</h4>
+                <p class="ingredients">
+                  필요재료: 통삼겹,참기름,청경채,간장,설탕,팔각....
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/깐쇼새우.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">60</span>분 <span class="m_p">6840</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트:<span class="m_t">10</span>분 <span class="m_p">9200</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">30</span>분 <span class="m_p">15000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>깐쇼새우</h4>
+                <p class="ingredients">
+                  필요재료:녹말가루,계란흰자,새우,소금,훗추가루,튀김기름....
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/짜장면.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">30</span>분 <span class="m_p">4370</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트:<span class="m_t">10</span>분 <span class="m_p">8740</span>원 </span></a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">20</span>분 <span class="m_p">11000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>짜장면</h4>
+                <p class="ingredients">
+                  필요재료: 양파, 양배추, 돼지고기,오이,춘장,설탕...
+                </p>
+                
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="menu-dinner">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>일식</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/돈까스.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">60</span>분 <span class="m_p">7915</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트:<span class="m_t">15</span>분 <span class="m_p">8950</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">11000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>돈까스</h4>
+                <p class="ingredients">
+                  필요재료:등심,밀가루,계란,빵가루,소금,후추,돈까스소스..
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/샤브샤브.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">60</span>분 <span class="m_p">15320</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트: <span class="m_t">20</span>분 <span class="m_p">16900</span>원</a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span> 분<span class="m_p">23000</span>원</a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>샤브샤브</h4>
+                <p class="ingredients">
+                  필요재료: 소고기샤브,미나리,느타리버섯,양파,물,무,대파,홍고추,다시마,양배추...
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/소바.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">30</span>분 <span class="m_p">8640</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트: <span class="m_t">15</span>분 <span class="m_p">12900</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">15000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>소바</h4>
+                <p class="ingredients">
+                  필요재료: 무,쪽파,김가루,고추냉이,김가루,쯔유,냉수;
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/유부초밥.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">30</span>분 <span class="m_p">8640</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트:<span class="m_t">15</span>분 <span class="m_p">12900</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">15000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>유부초밥</h4>
+                <p class="ingredients">
+                  필요재료: 유부초밥만들기세트, 당근 ,밥
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/우동.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">30</span>분 <span class="m_p">4850</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트: <span class="m_t">3</span>분 <span class="m_p">4960</span>원 </a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">30</span>분 <span class="m_p">11000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>우동</h4>
+                <p class="ingredients">
+                  필요재료: 우동면,쯔유,국간장,소금,맛술,대파,어묵,유부...
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="#" class="no-action"><img src="assets/img/menu/카레라이스.jpg" class="menu-img img-fluid modalBtn" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p class="price">
+                      <a href="https://www.10000recipe.com/recipe/6896510">요리: <span class="m_t">30</span>분 <span class="m_p">5980</span>원 </a><button class="select-btn select-btn1">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=40145159&plnId=300004&areaNum=4">밀키트:<span class="m_t">30</span>분 <span class="m_p">8400</span>원</a><button class="select-btn select-btn2">선택</button>
+                    </p>
+                    <p class="price">
+                      <a href="">배달: <span class="m_t">40</span>분 <span class="m_p">11000</span>원 </a><button class="select-btn select-btn3">선택</button>
+                    </p>
+                  </div>
+                </div>
+                <h4>카레라이스</h4>
+                <p class="ingredients">
+                  필요재료: 돼지고기,감자,카레,물,식요유,당근..
+                </p>
+                
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Dinner Menu Content -->
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>핫한 요심비</h2>
+          <p>지금 <span>요심비</span> 지식</p>
+        </div>
+
+        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content" style="background-color: rgba(255, 255, 255, 0.5); border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <a style="color: black;" href="https://www.ppomppu.co.kr/zboard/view.php?id=ppomppu&page=1&divpage=92&&no=547591">팔당불오징어400g 2팩 (17,500원/무료).</a>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3><a href="https://www.ppomppu.co.kr/index.php"><img src="https://cdn2.ppomppu.co.kr/images/logo_sub.png" alt="" srcset=""></a></h3>
+                      <h4>추천수 : </h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <a href="https://www.ppomppu.co.kr/zboard/view.php?id=ppomppu&page=1&divpage=92&&no=547591"><img src="assets/img/testimonials/팔당오지어볶음.png" class="img-fluid testimonial-img" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content" style="background-color: rgba(255, 255, 255, 0.5); border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <a href="https://www.burgerking.co.kr/#/eventDetail/1099" style="color: black;">버거킹 딜리버리 3,000원 할인 프로모션</a>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3><a href="https://www.burgerking.co.kr/#/home"><img style="width: 70px; height: 50px;"  src="assets/img/testimonials/버거킹로고.png" alt=""></a></h3>
+                      <h4>추천수:</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <a href="https://www.burgerking.co.kr/#/eventDetail/1099"><img src="assets/img/testimonials/버거킹.png" class="img-fluid testimonial-img" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content" style="background-color: rgba(255, 255, 255, 0.5); border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <a style="color: black;" href="https://www.baskinrobbins.co.kr/play/event/view.php?seq=144&category=ALL">6월 이달의 맛, 인스타그램에 사진을 올려주세요!</a>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3><a href="https://www.baskinrobbins.co.kr/"><img style="width: 70px; height: 50px;" src="assets/img/testimonials/베라 로고.png" alt=""></a></h3>
+                      <h4>추천수</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <a href="https://www.baskinrobbins.co.kr/play/event/view.php?seq=144&category=ALL"><img src="https://www.baskinrobbins.co.kr/upload/promotion/event/6369cffeb1367529a66ada3feb2ad9ce.png" class="img-fluid testimonial-img" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content" style="background-color: rgba(255, 255, 255, 0.5); border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <a style="color: black;" href="https://www.kfckorea.com/promotion/promotionList/detail/1011">쥭여주는 할인! 2탄! KFC의 레전드 닭껍질튀김을 1,900원에 먹을 수 있는 기회!</a>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3><a href="https://www.kfckorea.com/"><img src="assets/img/testimonials/kfc로고.png" alt=""></a></h3>
+                      <h4>추천수</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <a href="https://www.kfckorea.com/promotion/promotionList/detail/1011"><img src="assets/img/testimonials/kfc 이벤트.png" class="img-fluid testimonial-img" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>요심비</h2>
+          <p>당신의 <span>요심비</span> 를 알려드립니다.</p>
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/배달.jpg)">
+              <h3>배달</h3>
+              <div class="price align-self-start">당신은 총 <span style="color: #ce1212;" class="deliveryT">0분</span>을 아꼈습니다.</div>
+              <div class="price align-self-start">당신은 총 <span style="color: #ce1212;" class="deliveryP">0원</span>을 아꼈습니다.</div>
+              <p class="description deliveryD">
+                당신은 배달 요심비 상위 : -% 입니다.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/밀키트.jpg)">
+              <h3>밀키트</h3>
+              <div class="price align-self-start">당신은 총 <span style="color: #ce1212;" class="milkitT">0분</span>을 아꼈습니다.</div>
+              <div class="price align-self-start">당신은 총 <span style="color: #ce1212;" class="milkitP">0원</span>을 아꼈습니다.</div>
+              <p class="description">
+                당신은 밀키트 요심비 상위 : -% 입니다.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/요리.jpg)">
+              <h3>요리</h3>
+              <div class="price align-self-start">당신은 총 <span style="color: #ce1212;" class="cookingT">0분</span>을 아꼈습니다.</div>
+              <div class="price align-self-start">당신은 총 <span style="color: #ce1212;"class="cookingP">0원</span>을 아꼈습니다.</div>
+              <p class="description cookingD">
+                당신은 요리 요심비 상위 : -% 입니다.
+              </p>
+            </div><!-- End Event item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>배너</h2>
+          <p>잠깐!<span>요심비</span>있는곳 인가?</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/1955648.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info category1">
+                <h4 class="titleM"></h4>
+                <span class="nickM"></span>
+                <p class="messageM"></p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/1958235.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info category2">
+                <h4 class="titleM"></h4>
+                <span class="nickM"></span>
+                <p class="messageM"></p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/45986-O4WOCT.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info category3">
+                <h4 class="titleM"></h4>
+                <span class="nickM"></span>
+                <p class="messageM"></p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>배너 작성</h2>
+          <p>당신(들)의 <span>요심비</span> 어필하기</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+            <form action="#" method="#" role="form" class="php-email-form" data-aos="#" data-aos-delay="#">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="title" class="form-control" id="제목" placeholder="제목" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="닉네임" id="닉네임" placeholder="닉네임" data-rule="minlen:4" data-msg="Please enter a valid nickname">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="카테고리" id="카테고리" placeholder="카테고리 1,2,3" data-rule="minlen:4" data-msg="Please enter a valid category">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" id="내용" name="내용" rows="5" placeholder="내용"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">로그인 후 입력해주세요</div>
+              </div>
+              <div class="text-center"><button type="submit" class="complete">작성</button></div>
+            </form>
+          </div><!-- End Reservation Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>맛집</h2>
+          <p>주변 <span>요심비</span> 찾기</p>
+        </div>
+
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="https://www.google.com/search?sa=X&sca_esv=3e847fca20237d56&sca_upv=1&tbs=lf:1,lf_ui:9&tbm=lcl&q=%EC%A3%BC%EB%B3%80+%EB%A7%9B%EC%A7%91&rflfq=1&num=10&ved=2ahUKEwiazNfS9sCGAxUohq8BHT2sAUcQjGp6BAglEAE&biw=1920&bih=945&dpr=1#rlfi=hd:;si:14750678311811072228,l,Cg3so7zrs4Ag66eb7KeRSNyG8sHPq4CACFoQEAAiBuunm-ynkSoECAMQAJIBE2thbGd1a3N1X3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTTJNSEJIU2xCUkVBRaoBOxABKgoiBuunm-ynkSgJMh8QASIbKcwolrwCiJcCsxBgEk4d3gH13wTPsvU3fAVoMgoQAiIG66eb7KeR,y,S2JQH4WqsFU;mv:[[37.4969172,126.94606829999998],[37.4809559,126.92980960000001]]"><img src="assets/img/gallery/이미지1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="https://www.google.com/search?sa=X&sca_esv=3e847fca20237d56&sca_upv=1&tbs=lf:1,lf_ui:9&tbm=lcl&q=%EC%A3%BC%EB%B3%80+%EB%A7%9B%EC%A7%91&rflfq=1&num=10&ved=2ahUKEwiazNfS9sCGAxUohq8BHT2sAUcQjGp6BAglEAE&biw=1920&bih=945&dpr=1#rlfi=hd:;si:14750678311811072228,l,Cg3so7zrs4Ag66eb7KeRSNyG8sHPq4CACFoQEAAiBuunm-ynkSoECAMQAJIBE2thbGd1a3N1X3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTTJNSEJIU2xCUkVBRaoBOxABKgoiBuunm-ynkSgJMh8QASIbKcwolrwCiJcCsxBgEk4d3gH13wTPsvU3fAVoMgoQAiIG66eb7KeR,y,S2JQH4WqsFU;mv:[[37.4969172,126.94606829999998],[37.4809559,126.92980960000001]]"><img src="assets/img/gallery/이미지1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="https://www.google.com/search?sa=X&sca_esv=3e847fca20237d56&sca_upv=1&tbs=lf:1,lf_ui:9&tbm=lcl&q=%EC%A3%BC%EB%B3%80+%EB%A7%9B%EC%A7%91&rflfq=1&num=10&ved=2ahUKEwiazNfS9sCGAxUohq8BHT2sAUcQjGp6BAglEAE&biw=1920&bih=945&dpr=1#rlfi=hd:;si:14750678311811072228,l,Cg3so7zrs4Ag66eb7KeRSNyG8sHPq4CACFoQEAAiBuunm-ynkSoECAMQAJIBE2thbGd1a3N1X3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTTJNSEJIU2xCUkVBRaoBOxABKgoiBuunm-ynkSgJMh8QASIbKcwolrwCiJcCsxBgEk4d3gH13wTPsvU3fAVoMgoQAiIG66eb7KeR,y,S2JQH4WqsFU;mv:[[37.4969172,126.94606829999998],[37.4809559,126.92980960000001]]"><img src="assets/img/gallery/이미지1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="https://www.google.com/search?sa=X&sca_esv=3e847fca20237d56&sca_upv=1&tbs=lf:1,lf_ui:9&tbm=lcl&q=%EC%A3%BC%EB%B3%80+%EB%A7%9B%EC%A7%91&rflfq=1&num=10&ved=2ahUKEwiazNfS9sCGAxUohq8BHT2sAUcQjGp6BAglEAE&biw=1920&bih=945&dpr=1#rlfi=hd:;si:14750678311811072228,l,Cg3so7zrs4Ag66eb7KeRSNyG8sHPq4CACFoQEAAiBuunm-ynkSoECAMQAJIBE2thbGd1a3N1X3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTTJNSEJIU2xCUkVBRaoBOxABKgoiBuunm-ynkSgJMh8QASIbKcwolrwCiJcCsxBgEk4d3gH13wTPsvU3fAVoMgoQAiIG66eb7KeR,y,S2JQH4WqsFU;mv:[[37.4969172,126.94606829999998],[37.4809559,126.92980960000001]]"><img src="assets/img/gallery/이미지1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="https://www.google.com/search?sa=X&sca_esv=3e847fca20237d56&sca_upv=1&tbs=lf:1,lf_ui:9&tbm=lcl&q=%EC%A3%BC%EB%B3%80+%EB%A7%9B%EC%A7%91&rflfq=1&num=10&ved=2ahUKEwiazNfS9sCGAxUohq8BHT2sAUcQjGp6BAglEAE&biw=1920&bih=945&dpr=1#rlfi=hd:;si:14750678311811072228,l,Cg3so7zrs4Ag66eb7KeRSNyG8sHPq4CACFoQEAAiBuunm-ynkSoECAMQAJIBE2thbGd1a3N1X3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTTJNSEJIU2xCUkVBRaoBOxABKgoiBuunm-ynkSgJMh8QASIbKcwolrwCiJcCsxBgEk4d3gH13wTPsvU3fAVoMgoQAiIG66eb7KeR,y,S2JQH4WqsFU;mv:[[37.4969172,126.94606829999998],[37.4809559,126.92980960000001]]"><img src="assets/img/gallery/이미지1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="https://www.google.com/search?sa=X&sca_esv=3e847fca20237d56&sca_upv=1&tbs=lf:1,lf_ui:9&tbm=lcl&q=%EC%A3%BC%EB%B3%80+%EB%A7%9B%EC%A7%91&rflfq=1&num=10&ved=2ahUKEwiazNfS9sCGAxUohq8BHT2sAUcQjGp6BAglEAE&biw=1920&bih=945&dpr=1#rlfi=hd:;si:14750678311811072228,l,Cg3so7zrs4Ag66eb7KeRSNyG8sHPq4CACFoQEAAiBuunm-ynkSoECAMQAJIBE2thbGd1a3N1X3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTTJNSEJIU2xCUkVBRaoBOxABKgoiBuunm-ynkSgJMh8QASIbKcwolrwCiJcCsxBgEk4d3gH13wTPsvU3fAVoMgoQAiIG66eb7KeR,y,S2JQH4WqsFU;mv:[[37.4969172,126.94606829999998],[37.4809559,126.92980960000001]]"><img src="assets/img/gallery/이미지1.jpg" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>게시판</h2>
+          <p>꿀팁<span>요심비</span>공유</p>
+        </div>
+
+        <div class="mb-3">
+          <div style="border:0; width: 100%; height: 350px; overflow: scroll;" >
+            <table style="border-radius: 20px; margin: auto;">
+              <thead>
+                <tr style="height: 40px; background-color: #ec2727;color: white;border-radius: 20px; border-top-left-radius: 20px;border-top-right-radius: 20px; text-align: center;">
+                  <td width="100px">번호</td>
+                  <td width="150px">작성자</td>
+                  <td width="300px">글제목</td>
+                  <td width="350px">내용</td>
+                  <td width="200px">추천수</td>
+                  <td width="200px">추천하기</td>
+                </tr>
+              </thead>
+              <tbody class="addData" style="text-align: center;">
+
+              </tbody>
+            </table>
+          </div>
+        </div><!-- End Google Maps -->
+        <section id="book-a-table" class="book-a-table">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-header">
+              
+            </div>
+    
+            <div class="row g-0">
+    
+              <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+    
+              <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+                <form action="#" method="#" role="form" class="php-email-form" data-aos="#" data-aos-delay="#">
+                  <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6">
+                      <input style="width: 768px;" type="text" name="title" class="form-control" id="shareName" placeholder="제목" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea style="width: 768px;height: 300px;" class="form-control" id="shareSum" name="내용" rows="5" placeholder="내용"></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">로그인 후 입력해주세요</div>
+                  </div>
+                  <div class="text-center"><button type="submit" class="addrow">글쓰기</button></div>
+                </form>
+              </div><!-- End Reservation Form -->
+    
+            </div>
+    
+          </div>
+        </section>
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-map flex-shrink-0"></i>
+              <div>
+                <h3>주식회사 이득충</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>이메일 문의</h3>
+                <p>pyun9704@gmail.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>연락처</h3>
+                <p>02-111-1111</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Opening Hours</h3>
+                <div><strong>Mon-Sat:</strong> 11AM - 23PM;
+                  <strong>Sunday:</strong> Closed
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>주소</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022 - US<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>연락처</h4>
+            <p>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script>
+    let menu_len= $('.col-lg-4').length;
+  </script>
+  <script>
+    let deliveryT=0;
+    let deliveryP=0;
+    let milkitT=0;
+    let milkitP=0;
+    let cookT=0;
+    let cookP=0;
+    let rowNum=1;
+    let cancel=false;
+    $('.select-btn1').on('click',function(){
+      const priceContainer = $(this).closest('.price');
+      
+      const price1 = $(this).parent().find('.m_p').text();
+      const time1 = $(this).parent().find('.m_t').text();
+      
+      const closestSelectBtn2 = priceContainer.siblings().find('.select-btn2');
+      const closestSelectBtn3 = priceContainer.siblings().find('.select-btn3');
+      
+      const price2 = $(closestSelectBtn2).parent().find('.m_p').text();
+      const time2 = $(closestSelectBtn2).parent().find('.m_t').text();
+
+      const price3 = $(closestSelectBtn3).parent().find('.m_p').text();
+      const time3 = $(closestSelectBtn3).parent().find('.m_t').text();
+
+      let maxP = Math.max(price1,price2,price3);
+      let maxT = Math.max(time1,time2,time3);
+      console.log(maxP);
+      console.log(maxT);
+      if(maxP-price1>0){
+        let x = $('.cookingP').text();
+        console.log(x);
+        $('.cookingP').text((parseInt(x)+(maxP-price1))+"원");
+      }
+      if(maxT-time1>0){
+        let x = $('.cookingT').text();
+        console.log(x);
+        $('.cookingT').text((parseInt(x)+(maxT-time1))+"분");
+      }
+      console.log($('.clicked'))
+      $('.clicked').click();
+      $('.close').click();
+      
+    });
+    $('.select-btn2').on('click',function(){
+      const priceContainer = $(this).closest('.price');
+      
+      const price1 = $(this).parent().find('.m_p').text();
+      const time1 = $(this).parent().find('.m_t').text();
+      
+      const closestSelectBtn2 = priceContainer.siblings().find('.select-btn1');
+      const closestSelectBtn3 = priceContainer.siblings().find('.select-btn3');
+      
+      const price2 = $(closestSelectBtn2).parent().find('.m_p').text();
+      const time2 = $(closestSelectBtn2).parent().find('.m_t').text();
+
+      const price3 = $(closestSelectBtn3).parent().find('.m_p').text();
+      const time3 = $(closestSelectBtn3).parent().find('.m_t').text();
+
+      let maxP = Math.max(price1,price2,price3);
+      let maxT = Math.max(time1,time2,time3);
+      console.log(maxP);
+      console.log(maxT);
+      if(maxP-price1>0){
+        let x = $('.milkitP').text();
+        console.log(x);
+        $('.milkitP').text((parseInt(x)+(maxP-price1))+"원");
+      }
+      if(maxT-time1>0){
+        let x = $('.milkitT').text();
+        console.log(x);
+        $('.milkitT').text((parseInt(x)+(maxT-time1))+"분");
+      }
+      $('.clicked').click();
+      $('.close').click();
+    });
+    $('.select-btn3').on('click',function(){
+      const priceContainer = $(this).closest('.price');
+      
+      const price1 = $(this).parent().find('.m_p').text();
+      const time1 = $(this).parent().find('.m_t').text();
+      
+      const closestSelectBtn2 = priceContainer.siblings().find('.select-btn1');
+      const closestSelectBtn3 = priceContainer.siblings().find('.select-btn2');
+      
+      const price2 = $(closestSelectBtn2).parent().find('.m_p').text();
+      const time2 = $(closestSelectBtn2).parent().find('.m_t').text();
+
+      const price3 = $(closestSelectBtn3).parent().find('.m_p').text();
+      const time3 = $(closestSelectBtn3).parent().find('.m_t').text();
+
+      let maxP = Math.max(price1,price2,price3);
+      let maxT = Math.max(time1,time2,time3);
+      console.log(maxP);
+      console.log(maxT);
+      if(maxP-price1>0){
+        let x = $('.deliveryP').text();
+        console.log(x);
+        $('.deliveryP').text((parseInt(x)+(maxP-price1))+"원");
+      }
+      if(maxT-time1>0){
+        let x = $('.deliveryT').text();
+        console.log(x);
+        $('.deliveryT').text((parseInt(x)+(maxT-time1))+"분");
+      }
+      $('.clicked').click();
+      $('.close').click();
+    });
+    $('.complete').on("click",function(){
+      let title=$('#제목').val();
+      let name=$('#닉네임').val();
+      let category=$('#카테고리').val();
+      let body= $('#내용').val();
+      console.log(title,name,category,body);
+      if(title && name && category && body){
+        if (category==1){
+          alert("관계자만 입력할 수 있습니다.")
+        }else if (category==2){
+          alert("관계자만 입력할 수 있습니다.")
+        }else if (category==3){
+          alert("관계자만 입력할 수 있습니다.")
+        }else{
+          alert("유효한 카테고리가 아닙니다.")
+        }
+      }else{
+        alert('제대로 입력해주세요');
+      }
+    })
+    $(".addrow").on('click',function(){
+      let title=$('#shareName').val();
+      let summary=$('#shareSum').val();
+      if(title&&summary){
+        alert("로그인후 이용하실 수 있습니다.")
+      }else{
+        alert("제대로 입력해주세요.");
+      }
+    })
+      $('.addData').on('click','.like-btn',function(){
+          
+        alert("로그인후 이용하실 수 있습니다.")
+      })
+    
+    var closeBtn = document.getElementsByClassName("close")[0];//span
+
+    $('.modalBtn').on('click',function(){
+      $(this).parent().siblings('.modal').css('display',"block");
+
+      const closest1 = $(this).parent('.no-action').siblings('.modal').find(".price")[0];
+      const closest2 = $(this).parent('.no-action').siblings('.modal').find(".price")[1];
+      const closest3 = $(this).parent('.no-action').siblings('.modal').find(".price")[2];
+      
+      
+      const price1 = $(closest1).find('.m_p').text();
+      const time1 = $(closest1).find('.m_t').text();
+      
+      const price2 = $(closest2).find('.m_p').text();
+      const time2 = $(closest2).find('.m_t').text();
+      console.log(price2);
+      const price3 = $(closest3).find('.m_p').text();
+      const time3 = $(closest3).find('.m_t').text();
+      
+      console.log(price3,time3)
+      let maxP = Math.max(price1,price2,price3);
+      let maxT = Math.max(time1,time2,time3);
+
+      let value1= $(closest1).children('a').html()+`| 요성비: ${maxT-time1}분 ${maxP-price1}원`;
+      let value2= $(closest2).children('a').html()+`| 요성비: ${maxT-time2}분 ${maxP-price2}원`;
+      let value3= $(closest3).children('a').html()+`| 요성비: ${maxT-time3}분 ${maxP-price3}원`;
+      console.log($(closest3).children('a').html())
+
+      if(!$(closest1).children('a').html().includes(`| 요성비: ${maxT-time1}분 ${maxP-price1}원`) && price1!=0){
+        $(closest1).children('a').html(value1);
+      }
+      if(!$(closest2).children('a').html().includes(`| 요성비: ${maxT-time2}분 ${maxP-price2}원`)&& price2!=0){
+        $(closest2).children('a').html(value2);
+      }
+      if(!$(closest3).children('a').html().includes(`| 요성비: ${maxT-time3}분 ${maxP-price3}원`)&& price3!=0){
+        $(closest3).children('a').html(value3);
+      }
+      
+        
+    })
+
+    $('.close').on('click',function(){
+      $(this).parent().parent().css('display',"none");
+    })
+    window.onclick = function(event){
+      if(event.target ==$('.modal')){
+        $('.modal').css("display","none");
+      }
+    }
+    $(document).ready(function () {
+    $(".no-action").click(function (event) {
+      event.preventDefault();
+    });
+  });
+    // <div class="member-info category1">
+    //             <h4 class="titleM"></h4>
+    //             <span class="nickM"></span>
+    //             <p class="messageM"></p>
+  </script>
+    <!-- <script>
+      let cnt=1;
+      const proxyUrl = 'https://api.allorigins.win/raw?url=';
+      const 된장찌개= 'https://www.10000recipe.com/recipe/6863103';
+      const 삼겹살= 'https://www.10000recipe.com/recipe/6896510';
+      const 제육볶음='https://www.10000recipe.com/recipe/6845428';
+      const 찜닭='https://www.10000recipe.com/recipe/6880798';
+      const 비빔밥='https://www.10000recipe.com/recipe/6839413'
+      const 갈비탕='https://www.10000recipe.com/recipe/6858650'
+
+      async function crawl(url) {
+        const decodedUrl = decodeURI(url);
+        console.log(`크롤링 ${decodedUrl} ...`);
+        
+        const response = await fetch(proxyUrl + encodeURIComponent(url), {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
+            'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7'
+          }
+        });
+        
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+  
+        const htmlString = await response.text();
+        const parser = new DOMParser();
+        const htmlDOM = parser.parseFromString(htmlString, 'text/html');
+  
+        const ingredientsElements = htmlDOM.querySelectorAll('.ready_ingre3 ul li');
+        const timeElements = htmlDOM.querySelectorAll('.view2_summary_info');
+        let ingredients = '';
+        let time = '';
+        ingredientsElements.forEach(ingredientElement => {
+          const ingredientNameElement = ingredientElement.querySelector('a');
+          const ingredientUnitElement = ingredientElement.querySelector('.ingre_list_ea');
+
+          if (ingredientNameElement && ingredientUnitElement) {
+            const ingredientName = ingredientNameElement.textContent.trim();
+            const ingredientUnit = ingredientUnitElement.textContent.trim();
+            ingredients += `${ingredientName}: ${ingredientUnit}<br>`;
+          }
+        });
+        timeElements.forEach(timeElement =>{
+          const ingredientTimeElement = timeElement.querySelector(".view2_summary_info2");
+          console.log(ingredientTimeElement)
+          time+=ingredientTimeElement.textContent;
+        })
+        
+        document.querySelector('.한식'+cnt).innerHTML = ingredients;
+        $('.time'+cnt).text("시간: "+ time);
+        cnt++;
+      }
+      
+      crawl(된장찌개)
+        .then(() => {
+          console.log('데이터 수집 완료');
+        })
+        .catch(err => console.error('Error:', err));
+      crawl(삼겹살)
+        .then(() => {
+          console.log('데이터 수집 완료');
+        })
+        .catch(err => console.error('Error:', err));
+      crawl(제육볶음)
+        .then(() => {
+          console.log('데이터 수집 완료');
+        })
+        .catch(err => console.error('Error:', err));
+      crawl(찜닭)
+        .then(() => {
+          console.log('데이터 수집 완료');
+        })
+        .catch(err => console.error('Error:', err));
+      crawl(비빔밥)
+        .then(() => {
+          console.log('데이터 수집 완료');
+        })
+        .catch(err => console.error('Error:', err));
+      crawl(갈비탕)
+        .then(() => {
+          console.log('데이터 수집 완료');
+        })
+        .catch(err => console.error('Error:', err));
+    </script> -->
+  </body>
+  </html>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
