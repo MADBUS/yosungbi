@@ -65,21 +65,6 @@
 
 ---
 
-## 설치 및 실행 방법
-
-1. **프로젝트 클론**
-    ```bash
-    git clone https://github.com/yourusername/yosimbi.git
-    ```
-
-2. **이클립스 또는 Visual Studio Code에서 프로젝트 열기**
-
-3. **MySQL 데이터베이스 설정**
-    - `src/main/resources/application.properties` 파일에서 데이터베이스 설정 수정
-
-4. **Tomcat 서버 설정 및 실행**
-    - 로컬 서버 환경에서 Tomcat을 사용하여 프로젝트 실행
-
 ## 사용된 기술 스택
 
 - **프로그래밍 언어**: Java
