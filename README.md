@@ -18,15 +18,8 @@
 
 ## 기술 아키텍처
 
-### 프로그래밍 언어
-- Java
-
 ### 프레임워크
-- Eclipse
 - Visual Studio Code
-
-### 데이터베이스
-- MySQL
 
 ### 프론트엔드
 - HTML
@@ -66,13 +59,9 @@
 ---
 
 ## 사용된 기술 스택
-
-- **프로그래밍 언어**: Java
-- **프레임워크**: Eclipse, Visual Studio Code
-- **데이터베이스**: MySQL
+- **프레임워크**: Visual Studio Code
 - **프론트엔드**: HTML, CSS, JavaScript, Bootstrap
 - **버전 관리**: Git, Github
-- **배포 환경**: 로컬 서버(Tomcat)
 
 ---
 
